@@ -18,6 +18,8 @@ body {
   background-repeat: no-repeat;
   background-position: center top;
   background-attachment: scroll;
+  overflow-x:hidden;
+ 
 }
 
 .hero {
@@ -66,8 +68,7 @@ body {
 
 .card {
   display: grid;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem; 
+  padding-inline: 1rem;
   grid-template-columns: 160px 1fr;
   align-items: center;
   gap: 1.25rem;
@@ -75,8 +76,7 @@ body {
 
 .card.reverse {
   grid-template-columns: 1fr 160px;
-  padding-right: 2rem;
-  padding-right: 1.5rem; 
+  padding-inline: 1rem;
   align-items: center;
   gap: 1.25rem;
   text-align: right;
@@ -156,16 +156,19 @@ hr.separator {
 
 @media (max-width: 480px) {
   .card, .card.reverse {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .text-group {
+    align-items: center;
   }
 
   .social-image {
     width: 100%;
     height: auto;
   }
-
-  .text-group {
-    align-items: center;
-    text-align: center;
-  }
 }
+
