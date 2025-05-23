@@ -151,20 +151,3 @@ hr.separator {
   width: 28px;
   height: 28px;
 }
-
-
-@media (max-width: 370px) {
-  .card, .card.reverse {
-    grid-template-columns: 1fr;
-  }
-
-  .social-image {
-    width: 100%;
-    height: auto;
-  }
-
-  .text-group {
-    align-items: center;
-    text-align: center;
-  }
-}
