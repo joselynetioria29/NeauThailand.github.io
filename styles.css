@@ -66,20 +66,23 @@ body {
 
 .card {
   display: grid;
-  padding-left: 1.5rem;
-  padding right: 1.5rem; 
+ 
   grid-template-columns: 160px 1fr;
   align-items: center;
   gap: 1.25rem;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .card.reverse {
-  grid-template-columns: 1fr 160px;
-  padding-right: 2rem;
-  padding right: 1.5rem; 
+  grid-template-columns: 1fr 160px; 
   align-items: center;
   gap: 1.25rem;
   text-align: right;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .card.reverse .text-group {
